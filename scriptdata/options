@@ -15,6 +15,7 @@ If no option is specified, run default install process.
   -c, --clean               Clean the build cache first
   -s, --skip-sysupdate      Skip \"sudo pacman -Syu\"
       --skip-hyprland       Skip installing the config for Hyprland
+      --skip-ags            Skip installing the config for AGS
       --skip-hypr-aur       Skip installing hyprland-git
       --skip-pymyc-aur      Skip installing python-materialyoucolor-git, gradience,
                             python-libsass and python-material-color-utilities
@@ -63,6 +64,7 @@ while true ; do
     -f|--force) ask=false;shift;;
     -s|--skip-sysupdate) SKIP_SYSUPDATE=true;shift;;
     --skip-hyprland) SKIP_HYPRLAND=true;shift;;
+    --skip-ags) SKIP_AGS=true;shift;;
     --skip-hypr-aur) SKIP_HYPR_AUR=true;shift;;
     --skip-pymyc-aur) SKIP_PYMYC_AUR=true;shift;;
     --skip-fish) SKIP_FISH=true;shift;;
