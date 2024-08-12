@@ -36,7 +36,7 @@ cleancache(){
 # `man getopt` to see more
 para=$(getopt \
        -o hfk:cs \
-       -l help,force,fontset:,deplistfile:,clean,skip-sysupdate,skip-fish,skip-hyprland,skip-hypr-aur,skip-pymyc-aur,skip-plasmaintg,skip-miscconf \
+       -l help,force,fontset:,deplistfile:,clean,skip-sysupdate,skip-fish,skip-hyprland,skip-ags,skip-hypr-aur,skip-pymyc-aur,skip-plasmaintg,skip-miscconf \
        -n "$0" -- "$@")
 [ $? != 0 ] && echo "$0: Error when getopt, please recheck parameters." && exit 1
 #####################################################################################
